@@ -24,7 +24,7 @@ export default function Merch() {
             <img
               src={item.src}
               alt={item.alt}
-              className="w-auto h-auto transition-transform duration-300 group-hover:scale-110"
+              className="w-56 h-auto transition-transform duration-300 group-hover:scale-110"
             />
           </div>
         ))}
