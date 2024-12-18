@@ -4,7 +4,7 @@ import img3 from '../assets/gitamBookN.png';
 
 export default function Merch() {
   return (
-    <div className="flex flex-col items-center lg:flex-row justify-between p-4 lg:p-8 gap-8">
+    <div id='merch' className="flex flex-col items-center lg:flex-row justify-between p-4 lg:p-8 gap-8">
       {/* Title: Display First in Mobile View */}
       <h2 className="text-6xl pt-10 sm:text-6xl font-bold text-left text-cyan-600 mb-4  lg:hidden">
         Carry Gitam with You

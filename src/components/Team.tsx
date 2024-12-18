@@ -11,7 +11,7 @@ const Team: React.FC = () => {
   ];
 
   return (
-    <section className=" p relative overflow-hidden">
+    <section id="team" className=" p relative overflow-hidden">
       {/* Outer container for the carousel */}
       <div className="flex animate-marquee whitespace-nowrap mx-8">
         {/* Render images in a continuous loop */}

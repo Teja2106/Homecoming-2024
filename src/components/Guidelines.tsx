@@ -1,6 +1,6 @@
 export default function Guidelines() {
   return (
-    <div className="bg-emerald-600 rounded-2xl">
+    <div id="guidelines" className="bg-emerald-600 rounded-2xl">
       <div className="p-8">
         <h2 className='text-6xl font-bold text-cyan-200'>Guidelines</h2>
         <ul className="text-lg font-semibold text-left gap-12 py-10 text-gray-100 list-disc pl-5">

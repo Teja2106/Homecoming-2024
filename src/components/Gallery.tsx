@@ -13,8 +13,8 @@ import img7 from '../assets/Screenshot 2024-11-30 175247.png';
 const imageDetails = [
   { src: img1, text: 'The memories may fade, but the bond remains.' },
   { src: img2, text: 'Coming back feels like never leaving' },
-  { src: img3, text: 'Sometimes you look back at yur life and realize how much has changed but other times, it feel like nothing has changed at all' },
-  { src: img4, text: 'The palce where it all started' },
+  { src: img3, text: 'Sometimes you look back at your life and realize how much has changed but other times, it feel like nothing has changed at all' },
+  { src: img4, text: 'The place where it all started' },
   { src: img5, text: " We didn't realize we were making memories, we just knew we were having fun" },
   { src: img6, text: 'Laughter lessons and life long friends' },
   { src: img7, text: 'Not just a campus but a chapter of life' },

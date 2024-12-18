@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <div className=''>
+    <div className='' id='about'>
       {/* Main Section */}
       <div className="relative w-full">
         {/* Background Image */}

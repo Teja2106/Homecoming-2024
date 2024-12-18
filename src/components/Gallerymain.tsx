@@ -2,9 +2,9 @@ import yourImage from '../assets/Screenshot 2024-11-30 154215.png';  // Adjust t
 
 export default function Gallerymain() {
   return (
-    <div>
-      <div className="grid grid-cols-1 gap-4 pt-8 lg:grid-cols-2 lg:gap-8">
-        <div className="h-auto rounded-lg flex flex-col justify-center items-start py-8">
+    <div >
+      <div  className="grid grid-cols-1 gap-4 pt-8 lg:grid-cols-2 lg:gap-8">
+        <div  id='gallery' className="h-auto rounded-lg flex flex-col justify-center items-start py-8">
           <h2 className='font-bold text-left text-6xl text-amber-800'>Through<br></br>
           The lens of time</h2>
           <p className='text-2xl font-semibold text-gray-600 text-left mt-8'>

@@ -14,8 +14,7 @@ import registrationDesk from "../assets/Screenshot 2024-12-02 123104.png";
 import registerSpeaker from "../assets/Screenshot 2024-12-02 123722.png";
 import cricketMatch from "../assets/Screenshot 2024-11-30 175043.png";
 import football from "../assets/Screenshot 2024-12-02 122342.png";
-import whiteComedian from "../assets/Screenshot 2024-12-04 221759.png";
-import blackComedian from "../assets/Screenshot 2024-12-04 222719.png";
+
 
 const Events = () => {
   const slides = [
@@ -90,7 +89,7 @@ const Events = () => {
   };
 
   return (
-    <div className="relative mt-4 w-full h-full rounded-2xl overflow-hidden p-4 md:p-8">
+    <div id="events" className="relative mt-4 w-full h-full rounded-2xl overflow-hidden p-4 md:p-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full items-center">
         {/* Right Side Images (Mobile First) */}
         <div className="flex flex-col items-center justify-center gap-4">
