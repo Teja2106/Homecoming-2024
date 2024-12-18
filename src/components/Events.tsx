@@ -38,51 +38,44 @@ const Events = () => {
     {
       displayUrl: friendsInCarnival,
       backgroundUrl: carnival,
-      title: "Carnival",
+      title: "Carnival - Innovation Expo - Sports",
       description:
-        "Where nostalgia meets fun! Reconnect with old friends at our vibrant carnival with games, creative workshops, thrilling rides, and live performances.",
-      timeAndVenue: "5:00 to 6:30 pm @Coke Station Road",
+        "Where nostalgia meets fun! Reconnect with old friends at our vibrant carnival with games, creative workshops, thrilling rides, and sports.",
+      timeAndVenue: "5:00 to 6:30 pm",
     },
     {
       displayUrl: racingCar,
       backgroundUrl: vrHeadSet,
-      title: "Racing Event",
+      title: "Inaugral",
       description:
-        "Rev up your engines for an adrenaline-packed racing event, featuring virtual car races and thrilling VR experiences. Get ready to race against your peers!",
-      timeAndVenue: "6:00 to 7:00 pm @VR Center",
+        "The inaugural event marks the beginning of a new journey, celebrating the vision, purpose, and future of our endeavor.",
+      timeAndVenue: "6:00 to 7:00 pm",
     },
     {
       displayUrl: singer,
       backgroundUrl: musicBand,
-      title: "Live Music Performance",
+      title: "Cultural",
       description:
-        "Unwind with some live music. From soulful ballads to high-energy performances, enjoy a night of great tunes by the best artists.",
-      timeAndVenue: "7:00 to 8:30 pm @Open Auditorium",
+        "A vibrant celebration of heritage and creativity, showcasing diverse traditions, music, dance, and art that bring cultures to life.",
+      timeAndVenue: "7:30 to 8:00 pm @Open Auditorium",
     },
     {
       displayUrl: beerParty,
       backgroundUrl: groupPic,
-      title: "After Party",
+      title: "Stand up comedy",
       description:
-        "End the night with a bang at our after-party! Enjoy good company, music, and beverages as you celebrate your reunion in style.",
-      timeAndVenue: "9:00 pm onwards @The Lounge",
+        "An evening of laughter and wit, where comedians deliver punchlines and stories guaranteed to keep you entertained and in splits!",
+      timeAndVenue: "8:00 to 8:30",
     },
     {
       displayUrl: cricketMatch,
       backgroundUrl: football,
-      title: "Cricket Match",
+      title: "Dinner + Live Music",
       description:
-        "Join the friendly cricket match to relive the glory of past victories. Whether you’re a player or a spectator, it’s all about fun and camaraderie.",
-      timeAndVenue: "2:00 to 4:00 pm @Cricket Ground",
+        "An enchanting evening featuring a delightful dinner paired with soulful live music to create the perfect ambiance for relaxation and enjoyment.",
+      timeAndVenue: "8:30 to 9:30",
     },
-    {
-      displayUrl: whiteComedian,
-      backgroundUrl: blackComedian,
-      title: "Comedy Night",
-      description:
-        "Get ready for a night filled with laughter and fun! Top comedians will take the stage and keep you entertained throughout the night.",
-      timeAndVenue: "7:00 to 8:00 pm @Main Hall",
-    },
+    
   ];
 
   const length = slides.length;

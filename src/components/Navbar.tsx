@@ -66,7 +66,7 @@ export default function Navbar() {
             <div className="flex items-center gap-4">
               <div className="sm:flex sm:gap-4">
                 <a
-                  className="block rounded-full bg-teal-600 px-5 py-2.5 text-lg font-medium text-white transition hover:bg-teal-700"
+                  className="block rounded-full bg-emerald-600 px-5 py-2.5 text-lg font-medium text-white transition hover:bg-teal-700"
                   href="https://www.alumni.gitam.edu/events/event/456379.dz" target='_blank'
                 >
                   RSVP
