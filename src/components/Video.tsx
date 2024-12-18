@@ -1,4 +1,4 @@
-import headerVideo from '../assets/mainvdo.mp4'
+import headerVideo from '../assets/mainVdo HD.mp4'
 
 export default function Video() {
   return (
