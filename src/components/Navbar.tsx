@@ -6,7 +6,7 @@ export default function Navbar() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
 
-  const handleScroll = (event, id) => {
+  const handleScroll = (event:React.SyntheticEvent, id: string) => {
     event.preventDefault(); // Prevent default anchor behavior
     const targetElement = document.getElementById(id);
 
