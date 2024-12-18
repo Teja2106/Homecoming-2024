@@ -1,5 +1,6 @@
 import Logo from '../assets/gitamLogoGreenN.png';
 import LogoImage from '../assets/HClogoN.png';
+import LogoImage2 from '../assets/alumni pride logo.jpg';
 
 export default function Footer() {
   return (
@@ -15,6 +16,9 @@ export default function Footer() {
             <a rel="noopener noreferrer" href="#">
               <img src={LogoImage} className="w-32 h-auto" alt="Logo 2" />
             </a>
+            <a rel="noopener noreferrer" href="#">
+              <img src={LogoImage2} className="w-32 h-auto" alt="Logo 2" />
+            </a>
           </div>
           
           {/* Section 2: Social Media Links in the Center */}
@@ -22,7 +26,7 @@ export default function Footer() {
             <div className="uppercase py-4 font-semibold dark:text-gray-900">Follow Us</div>
             <div className="flex justify-center space-x-5">
               {/* Facebook */}
-              <a rel="noopener noreferrer" href="#" title="Facebook" className="p-1">
+              <a rel="noopener noreferrer" href="https://www.facebook.com/share/KtjabG7Xg9zPzumU/" title="Facebook" className="p-1" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" className="w-6 h-6 fill-current">
                   <path d="M32 16c0-8.839-7.167-16-16-16-8.839 0-16 7.161-16 16 0 7.984 5.849 14.604 13.5 15.803v-11.177h-4.063v-4.625h4.063v-3.527c0-4.009 2.385-6.223 6.041-6.223 1.751 0 3.584 0.312 3.584 0.312v3.937h-2.021c-1.984 0-2.604 1.235-2.604 2.5v3h4.437l-0.713 4.625h-3.724v11.177c7.645-1.199 13.5-7.819 13.5-15.803z"></path>
                 </svg>
@@ -43,14 +47,30 @@ export default function Footer() {
           </div>
           
           {/* Section 3: Contact Info at the Right */}
-          <div className="lg:w-1/3 text-right">
-            <div className="uppercase py-4 font-semibold dark:text-gray-900">Contact Us</div>
-            <div className="space-y-2 text-sm">
-              <p>Phone: 7842530045</p>
-              <p>Email: hc2024vsp@gitam.edu</p>
-              <p>Address: GITAM Gandhi Nagar, Rushikonda, Visakhapatnam, Andhra Pradesh 530045, India</p>
-            </div>
-          </div>
+          <div className="lg:w-1/3 text-center">
+  <div className="uppercase py-4 font-semibold dark:text-gray-900">Contact Us</div>
+  <div className="space-y-4 text-sm">
+    <div className="flex items-center justify-center">
+      <svg height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+      </svg>
+      <p className="ml-2">7842530045</p>
+    </div>
+    <div className="flex items-center justify-center">
+      <svg height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+      </svg>
+      <p className="ml-2">hc2024vsp@gitam.edu</p>
+    </div>
+    <div className="flex  justify-center">
+      <svg height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+        <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+      </svg>
+      <p className="ml-2">GITAM (Deemed to be University), Gandhi Nagar, Rushikonda, Visakhapatnam, Andhra Pradesh 530045, India</p>
+    </div>
+  </div>
+</div>
+
         </div>
 
         {/* Footer Bottom */}

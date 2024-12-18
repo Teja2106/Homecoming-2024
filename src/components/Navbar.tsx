@@ -159,6 +159,11 @@ export default function Navbar() {
             </a>
           </li>
           <li>
+            <a className="text-gray-500" href="#guidelines" onClick={(e) => handleScroll(e, 'guidelines')}>
+              Guidelines
+            </a>
+          </li>
+          <li>
             <a className="text-gray-500" href="#team" onClick={(e) => handleScroll(e, 'team')}>
               Team
             </a>
