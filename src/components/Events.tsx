@@ -1,20 +1,23 @@
 import { useState } from "react";
 
+import bharatImage from "../assets/Screenshot 2024-12-01 115259.png";
+import bharatBackground from "../assets/Screenshot 2024-12-01 140019.png";
 import classroom from "../assets/Screenshot 2024-12-01 120618.png";
 import alumni from "../assets/Screenshot 2024-12-01 120827.png";
 import friendsInCarnival from "../assets/Screenshot 2024-12-01 120955.png";
 import carnival from "../assets/Screenshot 2024-12-01 143029.png";
 import racingCar from "../assets/Screenshot 2024-12-01 140444.png";
-import vrHeadSet from "../assets/Screenshot 2024-12-01 140824.png";
+import vrHeadSet from "../assets/Screenshot 2024-12-01 140824.png"
 import singer from "../assets/Screenshot 2024-12-01 115808.png";
-import musicBand from "../assets/Screenshot 2024-12-01 120233.png";
-import beerParty from "../assets/Screenshot 2024-12-01 141232.png";
-import groupPic from "../assets/Screenshot 2024-12-01 141028.png";
-import registrationDesk from "../assets/Screenshot 2024-12-02 123104.png";
-import registerSpeaker from "../assets/Screenshot 2024-12-02 123722.png";
-import cricketMatch from "../assets/Screenshot 2024-11-30 175043.png";
-import football from "../assets/Screenshot 2024-12-02 122342.png";
-
+import musicBand from "../assets/Screenshot 2024-12-01 120233.png"
+import beerParty from "../assets/Screenshot 2024-12-01 141232.png"
+import groupPic from "../assets/Screenshot 2024-12-01 141028.png"
+import registrationDesk from "../assets/Screenshot 2024-12-02 123104.png"
+import registerSpeaker from "../assets/Screenshot 2024-12-02 123722.png"
+import cricketMatch from "../assets/Screenshot 2024-11-30 175043.png"
+import football from "../assets/Screenshot 2024-12-02 122342.png"
+import saikiran from "../assets/standup.jpg"
+import backstage from "../assets/standup_background.jpg"
 
 const Events = () => {
   const slides = [
@@ -22,59 +25,74 @@ const Events = () => {
       displayUrl: registerSpeaker,
       backgroundUrl: registrationDesk,
       title: "Registrations",
-      description:
-        "Kick off your homecoming with a smooth, welcoming registration. Check in, collect your essentials, and get a rundown of the day’s exciting activities—your first step to reconnecting and reliving your time at GITAM!",
-      timeAndVenue: "2:00 to 3:00 pm @Open Auditorium",
+      description: "Kick off your homecoming with a smooth, welcoming registration. Check in, collect your essentials, and get a rundown of the day’s exciting activities—your first step to reconnecting and reliving your time at GITAM!",
+      timeAndVenue: "2:00 to 3:00 pm @KRC Lawn",
+      venuBgColor:"#436D67"
     },
+    
     {
       displayUrl: classroom,
       backgroundUrl: alumni,
       title: "Departmental Visits",
-      description:
-        "Revisit the classrooms and labs that shaped your journey. Reconnect with professors, explore new innovations, and see how your department has evolved.",
+      description: "Revisit the classrooms and labs that shaped your journey. Reconnect with professors, explore new innovations, and see how your department has evolved.",
       timeAndVenue: "3:00 to 5:00 pm @Your Department",
+      venuBgColor:"#65594B"
     },
     {
       displayUrl: friendsInCarnival,
       backgroundUrl: carnival,
-      title: "Carnival - Innovation Expo - Sports",
-      description:
-        "Where nostalgia meets fun! Reconnect with old friends at our vibrant carnival with games, creative workshops, thrilling rides, and sports.",
-      timeAndVenue: "5:00 to 6:30 pm",
+      title: "Carnival",
+      description: "Where nostalgia meets fun! Reconnect with old friends at our vibrant carnival with games, creative workshops, thrilling rides, and live performances. Relive cherished memories while enjoying delicious treats. ",
+      timeAndVenue: "5:00 to 6:30 pm @Coke Station Road",
+      venuBgColor:"#962E3D"
     },
     {
       displayUrl: racingCar,
       backgroundUrl: vrHeadSet,
-      title: "Inaugral",
-      description:
-        "The inaugural event marks the beginning of a new journey, celebrating the vision, purpose, and future of our endeavor.",
-      timeAndVenue: "6:00 to 7:00 pm",
+      title: "Innovation Expo",
+      description: "Innovation Expo is where GITAM students, professors, and clubs showcase their innovative projects to esteemed alumni, creating oppurtunities to share ideas, collaborate, and build meaningful connections.",
+      timeAndVenue: "5:00 to 6:30 pm @Mother Teresa Road",
+      venuBgColor:"#6A5133"
+    },
+    {
+      displayUrl: football,
+      backgroundUrl: cricketMatch,
+      title: "Sports",
+      description: "Hit the field, relive the adrenaline, and reignite your competitive spirit! Join friendly matches, cheer for your teams, and celebrate the camaraderie and sportsmanship that made campus life unforgettable.",
+      timeAndVenue: "5:00 to 6:30 pm @Cricket Stadium",
+      venuBgColor:"#6E524B"
+    },
+    {
+      displayUrl: bharatImage,
+      backgroundUrl: bharatBackground,
+      title: "Inaugural",
+      description: "The Homecoming inaugural ceremony marks the beginning of the celebrations with a classical performance, traditional lamp lighting, and heartfelt speeches by distinguished guests.",
+      timeAndVenue: "6:30 to 7:30 pm @Open Auditorium",
+      venuBgColor:"#223E83"
     },
     {
       displayUrl: singer,
       backgroundUrl: musicBand,
-      title: "Cultural",
-      description:
-        "A vibrant celebration of heritage and creativity, showcasing diverse traditions, music, dance, and art that bring cultures to life.",
+      title: "Culturals",
+      description: "Celebrate the vibrant spirit of GITAM! Enjoy an evening of music, dance, drama, and art that brings back memories, showcase talent, and reconnects you with the energy of campus life.",
       timeAndVenue: "7:30 to 8:00 pm @Open Auditorium",
+      venuBgColor:"#022970"
     },
     {
+      displayUrl: saikiran,
+      backgroundUrl: backstage,
+      title: "Stand-up Comedy",
+      description: "Laugh out loud as talented comedians take the stage for a night of fun and nostalgia. Sit back, relax, and enjoy an evening filled with humor that brings back the lighthearted spirit of campus life!",
+      timeAndVenue: "8:00 to 8:30 pm @Open Auditorium",
+      venuBgColor:"#64597C"
+    },{
       displayUrl: beerParty,
       backgroundUrl: groupPic,
-      title: "Stand up comedy",
-      description:
-        "An evening of laughter and wit, where comedians deliver punchlines and stories guaranteed to keep you entertained and in splits!",
-      timeAndVenue: "8:00 to 8:30",
-    },
-    {
-      displayUrl: cricketMatch,
-      backgroundUrl: football,
       title: "Dinner + Live Music",
-      description:
-        "An enchanting evening featuring a delightful dinner paired with soulful live music to create the perfect ambiance for relaxation and enjoyment.",
-      timeAndVenue: "8:30 to 9:30",
-    },
-    
+      description: "Connect, collborate, and catch up over an evening of good food and great conversations. Meet fellow alumni, faculty, and students, and build valuable connections that last beyond the event.",
+      timeAndVenue: "8:30 to 9:30 pm @Mother Teresa Road",
+      venuBgColor:"#593318"
+    }
   ];
 
   const length = slides.length;
@@ -89,89 +107,80 @@ const Events = () => {
   };
 
   return (
-    <div id="events" className="relative mt-4 w-full h-full rounded-2xl overflow-hidden p-4 md:p-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full items-center">
-        {/* Right Side Images (Mobile First) */}
-        <div className="flex flex-col items-center justify-center gap-4">
-          <div className="flex space-x-4 overflow-hidden mb-4">
-            <img
-              src={slides[activeIndex].displayUrl}
-              alt="slide"
-              className="w-[200px] h-[250px] md:w-[300px] md:h-[350px] object-cover rounded-lg border-2 border-white"
-            />
-            <img
-              src={slides[(activeIndex + 1) % length].displayUrl}
-              alt="next-slide"
-              className="w-[150px] h-[200px] md:w-[200px] md:h-[250px] object-cover rounded-lg border-2 border-white"
-            />
-            <img
-              src={slides[(activeIndex + 2) % length].displayUrl}
-              alt="next-slide"
-              className="w-[150px] h-[200px] md:w-[200px] md:h-[250px] object-cover rounded-lg border-2 border-white"
-            />
-          </div>
-        </div>
+    <div className="relative flex flex-row justify-between items-center w-full h-[500px] overflow-hidden top-[20px]">
+      <div className="w-[50%]  text-white mb-6 pl-[20px]">
+  {/* Text content */}
+  
+  
+  <div className="w-[300px] mx-auto text-left m-3">
+  <h1 className="text-3xl m-4 text-[45px] font-amarante">{slides[activeIndex].title}</h1>
+  <p className="m-4">{slides[activeIndex].description}</p>
+  <p
+    className={`rounded-full inline-block mt-2 px-4 py-1 text-white m-4 whitespace-nowrap`}
+    style={{ backgroundColor: slides[activeIndex].venuBgColor }}
+  >
+    {slides[activeIndex].timeAndVenue}
+  </p>
+</div>
 
-        {/* Left Side Text (Mobile First) */}
-        <div className="text-center md:text-left text-white flex flex-col items-center md:items-start">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">{slides[activeIndex].title}</h1>
-          <p className="mb-4">{slides[activeIndex].description}</p>
-          <p className="bg-red-500 rounded-full inline-block px-4 py-2">{slides[activeIndex].timeAndVenue}</p>
+  
+  
+</div>
 
-          {/* Buttons under the images for mobile */}
-          <div className="flex py-6 gap-8 justify-center">
-            <button
-              onClick={handlePrevClick}
-              className="bg-white text-black p-4 rounded-full shadow-lg text-3xl w-16 h-16 flex items-center justify-center"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                className="w-8 h-8 text-green-700"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={4}
-                  d="M15 19l-7-7 7-7"
-                />
-              </svg>
-            </button>
-            <button
-              onClick={handleNextClick}
-              className="bg-green-700 text-black p-4 rounded-full shadow-lg text-3xl w-16 h-16 flex items-center justify-center"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                className="w-8 h-8 text-white"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={4}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
+      <div className="w-[50%] flex flex-row justify-around items-end gap-5 left-[200px] mr-2">
+        {/* Image elements */}
+        <div>
+  <img
+    src={slides[activeIndex].displayUrl}
+    alt="slide-1"
+    className="w-[302px] h-[310px] object-cover object-center rounded-[20px] border-2 border-white"
+  />
+</div>
+<div>
+  <img
+    src={slides[(activeIndex + 1) % length].displayUrl}
+    alt="slide-2"
+    className="w-[210px] h-[242px] object-cover object-center rounded-[20px] border-white"
+  />
+</div>
+<div>
+  <img
+    src={slides[(activeIndex + 2) % length].displayUrl}
+    alt="slide-3"
+    className="w-[210px] h-[242px] object-cover object-center rounded-[20px] border-white"
+  />
+</div>
+
       </div>
 
-      {/* Background Image */}
+      
+
+      {/* Left and Right arrow buttons */}
+      <button
+  onClick={handlePrevClick}
+  className="absolute left-5 top-1/2 transform -translate-y-1/2 bg-white text-black p-4 rounded-full w-12 h-12 flex items-center justify-center shadow-lg"
+>
+  &lt;
+</button>
+<button
+  onClick={handleNextClick}
+  className="absolute right-5 top-1/2 transform -translate-y-1/2 bg-white text-black p-4 rounded-full w-12 h-12 flex items-center justify-center shadow-lg"
+>
+  &gt;
+</button>
+
+
+      {/* Background image and gradient overlay */}
       <img
         src={slides[activeIndex].backgroundUrl}
-        alt="background"
-        className="hidden md:block absolute top-0 left-0 w-full h-full object-cover -z-10"
+        alt="Background"
+        className="absolute top-0 left-0 w-full h-full object-cover -z-10"
       />
-      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-emerald-900 to-transparent -z-10"></div>
-      <div className="absolute top-0 left-0 w-full h-full bg-emerald-950 opacity-60 -z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black to-transparent -z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20 -z-10"></div>
+
     </div>
   );
 };
 
-export default Events;
+export default Events

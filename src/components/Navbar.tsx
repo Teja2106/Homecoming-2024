@@ -26,13 +26,14 @@ export default function Navbar() {
   return (
     <div>
       <header className="bg-white fixed top-0 left-0 right-0 z-10">
-        <div className="mx-auto flex h-16 max-w-screen-xl items-center sm:px-2 lg:px-8">
-          <a className="block text-teal-600 mx-8" href="#">
-            <img className="h-8" src={LogoImage} alt="Logo" />
-          </a>
-          <div className="flex flex-1 px-8 items-center justify-end md:justify-between">
+        <div className="flex h-16 items-center sm:px-2 lg:px-5">
+        <a className="block text-teal-600 mx-8 h-[50px] w-auto" href="#">
+  <img className="h-full object-contain" src={LogoImage} alt="Logo" />
+</a>
+
+          <div className="flex flex-1 px-8 items-center justify-start md:justify-between">
             <nav aria-label="Global" className="hidden md:block">
-              <ul className="flex items-center gap-6 text-lg">
+              <ul className="flex  items-center gap-6 text-lg">
                 <li>
                   <a
                     className="text-gray-500 transition hover:underline hover:text-gray-500/75"
@@ -81,17 +82,17 @@ export default function Navbar() {
                 <li>
                   <a
                     className="text-gray-500 transition hover:underline hover:text-gray-500/75"
-                    href="#team"
-                    onClick={(e) => handleScroll(e, 'team')}
+                    href="#footer"
+                    onClick={(e) => handleScroll(e, 'footer')}
                   >
-                    Team
+                    Contact Us
                   </a>
                 </li>
               </ul>
             </nav>
             <div className="flex items-center gap-4">
               <a
-                className="block rounded-full bg-emerald-600 px-5 py-2.5 text-lg font-medium text-white transition hover:bg-teal-700"
+                className="block rounded-full bg-[#007069] px-5 py-1 font-medium text-white transition hover:bg-teal-700"
                 href="https://www.alumni.gitam.edu/events/event/456379.dz"
                 target="_blank"
               >

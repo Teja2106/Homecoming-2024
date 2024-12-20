@@ -1,4 +1,4 @@
-import headerVideo from '../assets/mainvdo.mp4'
+import headerVideo from '../assets/mainVdo HD.mp4'
 
 export default function Video() {
   return (
@@ -30,6 +30,14 @@ export default function Video() {
               aria-hidden="true"
               src={headerVideo} 
             ></video>
+             <h1 className="text-[150px] absolute top-[520px] left-[1000px] font-[700] text-[#4194D0] z-10">
+  28
+</h1>
+<p className="text-[38px] absolute top-[690px] left-[1000px] font-[700] text-[#4194D0] z-10 inline-block">
+  Dec 2024
+</p>
+
+
           </div>
         </div>
       </div>

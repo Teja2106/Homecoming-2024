@@ -4,7 +4,7 @@ import LogoImage2 from '../assets/alumni pride logo.jpg';
 
 export default function Footer() {
   return (
-    <div>
+    <div id="footer">
       <footer className="divide-y dark:bg-gray-100 dark:text-gray-800">
         <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
           
@@ -75,7 +75,7 @@ export default function Footer() {
 
         {/* Footer Bottom */}
         <div className="py-6 text-sm text-center dark:text-gray-600">
-          © Homecoming2024. All rights reserved.
+          © 2024. All rights reserved.
         </div>
       </footer>
     </div>

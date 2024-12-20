@@ -54,33 +54,33 @@ const Hero: React.FC = () => {
 
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 ">
           <div className="p-4">
-            <h1 className="text-5xl text-left my-8 font-bold text-blue-400">
+            <h1 className="text-5xl text-left my-8 font-bold text-[#4194D0]">
               Welcome Back to Where It All Began!
             </h1>
             <div className="flex space-x-4 mt-6">
               {/* Countdown Timer */}
               <div className="px- text-left px-1">
-                <p className="font-extrabold text-5xl p text-cyan-600">{timeLeft.days} </p>
-                <p className="text-lg flex ml-2 font-semibold text-gray-600">Days</p>
+                <p className=" text-5xl ">{timeLeft.days} <span className='text-[#007069]'>:</span></p>
+                <p className="text-lg flex ml-2 font-semibold text-[#007069]">Days </p>
               </div>
               <div className="text-left px-1">
-                <p className="font-extrabold text-5xl text-cyan-600">{timeLeft.hours} </p>
-                <p className="text-lg font-semibold px-1 text-gray-600">Hours</p>
+                <p className="text-5xl">{timeLeft.hours} <span className='text-[#007069]'>:</span></p>
+                <p className="text-lg flex ml-2 font-semibold text-[#007069]">Hours</p>
               </div>
               <div className="text-left px-1">
-                <p className="font-extrabold text-5xl px-1 text-cyan-600">{timeLeft.minutes} </p>
-                <p className="text-lg px- font-semibold text-gray-600">Minutes</p>
+                <p className="text-5xl">{timeLeft.minutes} <span className='text-[#007069]'>:</span></p>
+                <p className="text-lg flex ml-2 font-semibold text-[#007069]">Min</p>
               </div>
               <div className="text-left px-1">
-                <p className="font-extrabold text-5xl px-1 text-cyan-600">{timeLeft.seconds}</p>
-                <p className="text-lg font-semibold text-gray-600">Seconds</p>
+                <p className="text-5xl">{timeLeft.seconds}</p>
+                <p className="text-lg flex ml-2 font-semibold text-[#007069]">Sec</p>
               </div>
             </div>
           </div>
           
           {/* Description Text */}
           <div className="p-4 mb-">
-            <p className="my-8 font-semibold text-g text-lg text-left">
+            <p className="my-8  text-g text-lg text-left">
               Gitam isn’t just a campus; it’s a collection of stories—your stories. From late-night canteen chats to
               last-minute exam prep, from friendships that felt like family to moments that shaped your future, every
               corner of this place holds a memory. Our Homecoming is carefully curated to strengthen and engage the
