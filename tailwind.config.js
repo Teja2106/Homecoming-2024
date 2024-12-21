@@ -28,7 +28,6 @@ module.exports = {
         },
         ScaleEaseInOut: {
           "0%": { transform: "scale(1)" },
-
           "100%": { transform: "scale(1.5)" },
         },
         slide: {
@@ -39,6 +38,7 @@ module.exports = {
       },
       fontFamily: {
         annie: ['"Annie Use Your Telescope"', "sans-serif"],
+        amarante: ['"Amarante"', "sans-serif"], // Added Amarante font
       },
     },
   },

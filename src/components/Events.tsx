@@ -107,79 +107,81 @@ const Events = () => {
   };
 
   return (
-    <div className="relative flex flex-row justify-between items-center w-full h-[500px] overflow-hidden top-[20px]">
-      <div className="w-[50%]  text-white mb-6 pl-[20px]">
-  {/* Text content */}
-  
-  
-  <div className="w-[300px] mx-auto text-left m-3">
-  <h1 className="text-3xl m-4 text-[45px] font-amarante">{slides[activeIndex].title}</h1>
-  <p className="m-4">{slides[activeIndex].description}</p>
-  <p
-    className={`rounded-full inline-block mt-2 px-4 py-1 text-white m-4 whitespace-nowrap`}
-    style={{ backgroundColor: slides[activeIndex].venuBgColor }}
-  >
-    {slides[activeIndex].timeAndVenue}
-  </p>
-</div>
-
-  
-  
-</div>
-
-      <div className="w-[50%] flex flex-row justify-around items-end gap-5 left-[200px] mr-2">
-        {/* Image elements */}
-        <div>
-  <img
-    src={slides[activeIndex].displayUrl}
-    alt="slide-1"
-    className="w-[302px] h-[310px] object-cover object-center rounded-[20px] border-2 border-white"
-  />
-</div>
-<div>
-  <img
-    src={slides[(activeIndex + 1) % length].displayUrl}
-    alt="slide-2"
-    className="w-[210px] h-[242px] object-cover object-center rounded-[20px] border-white"
-  />
-</div>
-<div>
-  <img
-    src={slides[(activeIndex + 2) % length].displayUrl}
-    alt="slide-3"
-    className="w-[210px] h-[242px] object-cover object-center rounded-[20px] border-white"
-  />
-</div>
-
+    <div className="relative flex flex-col-reverse lg:flex-row justify-between items-center w-full h-auto lg:h-[500px] overflow-hidden top-[20px]">
+      {/* Left Section: Text Content */}
+      <div className="lg:w-[50%] text-white mb-6 lg:pl-[20px]">
+        <div className="w-[300px] mx-auto text-left m-3">
+          <h1 className="text-3xl m-4 text-[45px] font-amarante">{slides[activeIndex].title}</h1>
+          <p className="m-4">{slides[activeIndex].description}</p>
+          <p
+            className="rounded-full inline-block mt-2 px-4 py-1 text-white m-4 whitespace-nowrap"
+            style={{ backgroundColor: slides[activeIndex].venuBgColor }}
+          >
+            {slides[activeIndex].timeAndVenue}
+          </p>
+        </div>
       </div>
 
-      
+      {/* Right Section: Image Elements */}
+      <div className="w-[50%] flex flex-row justify-around items-end gap-5 left-[200px] m-[10px]">
+        {/* Main Image */}
+        <div>
+          <img
+            src={slides[activeIndex].displayUrl}
+            alt="slide-1"
+            className="w-[302px] h-[310px] object-cover object-center rounded-[20px] border-2 border-white"
+          />
+        </div>
+        {/* Additional Images (Visible Only on Large Screens) */}
+        <div className="hidden lg:block">
+          <img
+            src={slides[(activeIndex + 1) % length].displayUrl}
+            alt="slide-2"
+            className="w-[210px] h-[242px] object-cover object-center rounded-[20px] border-white"
+          />
+        </div>
+        <div className="hidden lg:block">
+          <img
+            src={slides[(activeIndex + 2) % length].displayUrl}
+            alt="slide-3"
+            className="w-[210px] h-[242px] object-cover object-center rounded-[20px] border-white"
+          />
+        </div>
+      </div>
 
-      {/* Left and Right arrow buttons */}
+      {/* Navigation Buttons */}
       <button
-  onClick={handlePrevClick}
-  className="absolute left-5 top-1/2 transform -translate-y-1/2 bg-white text-black p-4 rounded-full w-12 h-12 flex items-center justify-center shadow-lg"
->
-  &lt;
-</button>
-<button
-  onClick={handleNextClick}
-  className="absolute right-5 top-1/2 transform -translate-y-1/2 bg-white text-black p-4 rounded-full w-12 h-12 flex items-center justify-center shadow-lg"
->
-  &gt;
-</button>
+        onClick={handlePrevClick}
+        className="absolute left-5 top-1/2 transform -translate-y-1/2 bg-white text-black p-4 rounded-full w-12 h-12 flex items-center justify-center shadow-lg"
+      >
+        &lt;
+      </button>
+      <button
+        onClick={handleNextClick}
+        className="absolute right-5 top-1/2 transform -translate-y-1/2 bg-white text-black p-4 rounded-full w-12 h-12 flex items-center justify-center shadow-lg"
+      >
+        &gt;
+      </button>
 
-
-      {/* Background image and gradient overlay */}
+      {/* Background Image and Gradient Overlay */}
       <img
-        src={slides[activeIndex].backgroundUrl}
-        alt="Background"
-        className="absolute top-0 left-0 w-full h-full object-cover -z-10"
-      />
+  src={slides[activeIndex].backgroundUrl}
+  alt="Background"
+  className="absolute top-0 left-0 w-full h-full object-cover -z-10 "
+/>
+
+<div className="absolute top-0 left-0 w-full h-full -z-10 sm:block lg:hidden" 
+  style={{
+    background: `linear-gradient(to top, black, ${slides[activeIndex].venuBgColor})`,
+  }} ></div>
+
+
+      
+      
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black to-transparent -z-10"></div>
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20 -z-10"></div>
+</div>
 
-    </div>
   );
 };
 
