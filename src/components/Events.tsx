@@ -107,7 +107,7 @@ const Events = () => {
   };
 
   return (
-    <div className="relative flex flex-col-reverse lg:flex-row justify-between items-center w-full h-auto lg:h-[500px] overflow-hidden top-[20px]">
+    <div id="events" className="relative flex flex-col-reverse lg:flex-row justify-between items-center w-full h-auto lg:h-[500px] overflow-hidden top-[20px]">
       {/* Left Section: Text Content */}
       <div className="lg:w-[50%] text-white mb-6 lg:pl-[20px]">
         <div className="w-[300px] mx-auto text-left m-3">

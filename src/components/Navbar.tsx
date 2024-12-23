@@ -115,7 +115,7 @@ export default function Navbar() {
         { label: 'Gallery', id: 'gallery' },
         { label: 'Merch', id: 'merch' },
         { label: 'Guidelines', id: 'guidelines' },
-        { label: 'Contact Us', id: 'team' },
+        { label: 'Contact Us', id: 'footer' },
       ].map(({ label, id }) => (
         <li key={id}>
           <a
