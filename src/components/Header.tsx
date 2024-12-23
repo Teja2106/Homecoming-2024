@@ -1,92 +1,85 @@
 import React, { useState, useEffect } from 'react';
+// Add CSS here if needed
 
-// Function to calculate time left until the target date
 const calculateTimeLeft = () => {
-  const targetDate = new Date('2024-12-28T00:00:00'); // Target date (28 Dec 2024)
+  const targetDate = new Date('2024-12-28T00:00:00');
   const currentDate = new Date();
   const difference = targetDate.getTime() - currentDate.getTime();
 
-  // Calculate days, hours, minutes, and seconds
   const days = Math.floor(difference / (1000 * 60 * 60 * 24));
   const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
-  // Pad the values with leading zeros
-  const paddedDays = days.toString().padStart(2, '0');
-  const paddedHours = hours.toString().padStart(2, '0');
-  const paddedMinutes = minutes.toString().padStart(2, '0');
-  const paddedSeconds = seconds.toString().padStart(2, '0');
-
-  return { days: paddedDays, hours: paddedHours, minutes: paddedMinutes, seconds: paddedSeconds };
+  return { days, hours, minutes, seconds };
 };
 
 const Hero: React.FC = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [isSmallDevice, setIsSmallDevice] = useState(false);
 
-  // Update the countdown every second
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallDevice(window.innerWidth < 768); // Small device: screen width < 768px
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
-
-    // Cleanup the timer when the component unmounts
     return () => clearInterval(timer);
   }, []);
 
   return (
-    <div className='' id='about'>
-      {/* Main Section */}
+    <div id="about">
       <div className="relative w-full">
-        {/* Background Image */}
-        {/* <img
-          src={mainImage}
-          className="w-full h-full object-cover"
-          alt="Main Background"
-          style={{ opacity: 0.7 }}
-        /> */}
-        {/* Centered Logo */}
-        {/* <img
-          src={gitamLogoWhiteN}
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-auto"
-          alt="Gitam Logo"
-        /> */}
-
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 ">
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
           <div className="p-4">
             <h1 className="text-5xl text-left my-8 font-bold text-[#4194D0]">
               Welcome Back to Where It All Began!
             </h1>
-            <div className="flex space-x-4 mt-6">
-              {/* Countdown Timer */}
-              <div className="px- text-left px-1">
-                <p className=" text-5xl ">{timeLeft.days} <span className='text-[#007069]'>:</span></p>
-                <p className="text-lg flex ml-2 font-semibold text-[#007069]">Days </p>
+            {isSmallDevice ? (
+              <div className="text-left mt-4">
+                <p className="text-4xl font-bold">
+                  <span className="text-black">28</span>{' '}
+                  <span className="text-[#007069]">December 2024</span>
+                </p>
               </div>
-              <div className="text-left px-1">
-                <p className="text-5xl">{timeLeft.hours} <span className='text-[#007069]'>:</span></p>
-                <p className="text-lg flex ml-2 font-semibold text-[#007069]">Hours</p>
+            ) : (
+              <div className="flex space-x-2 md:space-x-4 justify-start items-center">
+                <div className="text-center">
+                  <p className="text-3xl md:text-5xl ">{timeLeft.days}<span className="text-[#007069]">:</span></p>
+                  <p className="text-sm md:text-lg text-[#007069]">Days</p>
+                </div>
+                <div className="text-center">
+                  <p className="text-3xl md:text-5xl ">{timeLeft.hours}<span className="text-[#007069]">:</span></p>
+                  <p className="text-sm md:text-lg text-[#007069]">Hours</p>
+                </div>
+                <div className="text-center">
+                  <p className="text-3xl md:text-5xl ">{timeLeft.minutes}<span className="text-[#007069]">:</span></p>
+                  <p className="text-sm md:text-lg text-[#007069]">Min</p>
+                </div>
+                <div className="text-center">
+                  <p className="text-3xl md:text-5xl ">{timeLeft.seconds}</p>
+                  <p className="text-sm md:text-lg text-[#007069]">Sec</p>
+                </div>
               </div>
-              <div className="text-left px-1">
-                <p className="text-5xl">{timeLeft.minutes} <span className='text-[#007069]'>:</span></p>
-                <p className="text-lg flex ml-2 font-semibold text-[#007069]">Min</p>
-              </div>
-              <div className="text-left px-1">
-                <p className="text-5xl">{timeLeft.seconds}</p>
-                <p className="text-lg flex ml-2 font-semibold text-[#007069]">Sec</p>
-              </div>
-            </div>
+            )}
           </div>
-          
-          {/* Description Text */}
-          <div className="p-4 mb-">
-            <p className="my-8  text-g text-lg text-left">
-              Gitam isn’t just a campus; it’s a collection of stories—your stories. From late-night canteen chats to
+
+          <div className="p-4">
+            <p className="my-8 text-lg text-left">
+              GITAM isn’t just a campus; it’s a collection of stories—your stories. From late-night canteen chats to
               last-minute exam prep, from friendships that felt like family to moments that shaped your future, every
               corner of this place holds a memory. Our Homecoming is carefully curated to strengthen and engage the
               vibrant alumni community. It’s a chance to reconnect with old friends, relive cherished memories, and forge
               new connections that inspire future journeys. Come back, walk those familiar paths, and remember—you never
-              really left. <p className='font-bold text-xl text-emerald-800'>Once a Gitamite, Always a Dynamite!</p>
+              really left. <p className="font-bold text-xl text-emerald-800">Once a GITAMITE, Always a Dynamite!</p>
             </p>
           </div>
         </div>

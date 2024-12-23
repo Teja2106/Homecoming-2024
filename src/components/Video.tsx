@@ -32,14 +32,11 @@ export default function Video() {
               ></video>
 
               {/* Text Overlay */}
-              <div className="absolute inset-0 flex flex-col justify-center items-center left-[50vw] top-[40vw]">
-                <h1 className="text-[10vw] font-[700] text-[#4194D0] z-10">
-                  28
-                </h1>
-                <p className="text-[2.5vw] font-[700] text-[#4194D0] z-10 -mt-[3vw]">
-                  Dec 2024
-                </p>
-              </div>
+              <div className="absolute inset-0 flex-col justify-center items-center left-[50vw] top-[40vw] hidden md:flex">
+  <h1 className="text-[10vw] font-[700] text-[#4194D0] z-10">28</h1>
+  <p className="text-[2.5vw] font-[700] text-[#4194D0] z-10 -mt-[3vw]">Dec 2024</p>
+</div>
+
             </div>
           </div>
         </div>
