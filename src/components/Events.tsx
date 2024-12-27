@@ -26,7 +26,7 @@ const Events = () => {
       backgroundUrl: registrationDesk,
       title: "Registrations",
       description: "Registration will begin at Bhima’s from 2:30pm, where we’ll ensure you’re all set for the day. You’ll receive a detailed event plan, a handy water bottle, a felt bag, your exclusive boarding pass, and an ID card to keep you organized and ready to explore. It’s the perfect start to an unforgettable experience.",
-      timeAndVenue: "Starts 2:30pm @Bhima's",
+      timeAndVenue: "2:30 PM to 3:00 PM @Bheemas",
       venuBgColor:"#436D67"
     },
     
@@ -34,8 +34,8 @@ const Events = () => {
       displayUrl: classroom,
       backgroundUrl: alumni,
       title: "CAMPUS TOUR",
-      description: "Join us for an engaging campus tour that showcases the heart of GITAM University! ",
-      timeAndVenue: "3:00 to 5:00 pm @Your Department",
+      description: "Begin your journey at the iconic cricket stadium, a jewel among university facilities, and explore the state-of-the-art gym. Capture memories at the open auditorium’s Homecoming and New Year photo booths. Visit G-Studio at GSHS for vibrant photo exhibitions, live performances, and the cozy Venture Cafe. Discover innovation at the Venture Development Centre, where groundbreaking alumni ideas took shape. Admire future-forward designs at the architecture building and cutting-edge technology at Murthy Lab 2 in the pharmacy building, featuring NMR spectroscopy and other high-tech equipment. Conclude at Talent Cafe with high tea, refreshments, and live music. Celebrate the spirit of GITAM with us!",
+      timeAndVenue: "3:00 PM to 5:00 PM (Multiple Venues)",
       venuBgColor:"#65594B"
     },
     {
@@ -43,7 +43,7 @@ const Events = () => {
       backgroundUrl: carnival,
       title: "Carnival",
       description: "Dive into pure fun with our vibrant carnival, featuring almost 10 exciting stalls just for you! Bounce around in the inflatable castle, showcase your skills at inflatable bowling alley, or get creative with pottery and tote bag painting. Don’t miss the classic treats—popcorn and cotton candy to keep the festive spirit alive!",
-      timeAndVenue: "5:00 to 6:30 pm @Coke Station Road",
+      timeAndVenue: "5:00 PM to 6:30 PM @Coke Station Road",
       venuBgColor:"#962E3D"
     },
     {
@@ -51,7 +51,7 @@ const Events = () => {
       backgroundUrl: vrHeadSet,
       title: "Innovation Expo",
       description: "Prepare to be wowed by a spectacular display of F1 cars, VR, Autonomous Obstacle Avoidance Drones that display highlight the incredible creativity and technological strides of GITAM clubs and students. For alumni, it’s a chance to relive the thrill of building your own ambitious projects and the pride of seeing ideas come to life. The future of technology is here, and it’s a nod to the foundation you helped create.",
-      timeAndVenue: "5:00 to 6:30 pm @Mother Teresa Road",
+      timeAndVenue: "5:00 PM to 6:30 PM @Coke Station Road",
       venuBgColor:"#6A5133"
     },
     {
@@ -59,15 +59,15 @@ const Events = () => {
       backgroundUrl: cricketMatch,
       title: "Sports",
       description: "Get competitive with games like tug of war, badminton, table tennis, basketball, and a unique twist—a blindfolded cricket! There’s something for everyone to enjoy and participate in .Whether you're a seasoned athlete or just looking for some light-hearted fun, these activities offer the perfect opportunity to bond, compete, and create lasting memories.",
-      timeAndVenue: "5:00 to 6:30 pm @Cricket Stadium",
+      timeAndVenue: "5:00 PM to 6:30 PM @Cricket Stadium",
       venuBgColor:"#6E524B"
     },
     {
       displayUrl: bharatImage,
       backgroundUrl: bharatBackground,
       title: "Inaugural",
-      description: "Thrilled to have some of GITAM’s most accomplished alumni joining us to celebrate this grand occasion. From the Class of 1991, Shri. Naresh Kumar Oruganti will grace the event. Representing the Class of 1994, we welcome Smt. Sireesha Gouthu. Adding to the star lineup is Shri. Girish Gadamsetty from the Class of 1997. Finally, the creative genius Shri. Ameet Mirpuri, Class of 1999 will also be part of the celebrations. Their stories promise to inspire, amaze, and make this event truly memorable.",
-      timeAndVenue: "6:30 to 7:30 pm @Open Auditorium",
+      description: "At 6:30 pm is the inaugural where we are thrilled to have some of GITAM’s most accomplished alumni joining us to celebrate this grand occasion. From the Class of 1991, Shri. Naresh Kumar Oruganti, the visionary CEO of Symbiosys Technologies, will grace the event. Representing the Class of 1994, we welcome Smt. Sireesha Gouthu, dynamic MLA of Palasa. Adding to the star lineup is Shri. Girish Gadamsetty from the Class of 1997, leading global operations as Director of Business Operations at Adobe. Finally, the creative genius Shri. Ameet Mirpuri, Class of 1999, a renowned design consultant for high-profile inaugurals, will also be part of the celebrations. Their stories promise to inspire, amaze, and make this event truly memorable.",
+      timeAndVenue: "6:30 PM to 7:30 PM @Dental Parking",
       venuBgColor:"#223E83"
     },
     {
@@ -75,7 +75,7 @@ const Events = () => {
       backgroundUrl: musicBand,
       title: "Culturals",
       description: "Groove to electrifying group dances by the Starbursts who have come specially from Bangalore and have already delivered sensational performances at the HomeComing’24 at the Bangalore campus",
-      timeAndVenue: "7:30 to 8:00 pm @Open Auditorium",
+      timeAndVenue: "7:30 PM to 8:00 PM @Dental Parking",
       venuBgColor:"#022970"
     },
     {
@@ -83,14 +83,14 @@ const Events = () => {
       backgroundUrl: backstage,
       title: "Stand-up Comedy",
       description: "Laugh out loud as talented comedians take the stage for a night of fun and nostalgia. Sit back, relax, and enjoy an evening filled with humor that brings back the lighthearted spirit of campus life!",
-      timeAndVenue: "8:00 to 8:30 pm @Open Auditorium",
+      timeAndVenue: "8:00 PM to 8:30 PM @Dental Parking",
       venuBgColor:"#64597C"
     },{
       displayUrl: beerParty,
       backgroundUrl: groupPic,
       title: "Dinner + Live Music",
       description: "Enjoy a delightful dinner accompanied by live music, creating the perfect atmosphere to engage with friends, seniors, and new acquaintances. It’s a night of laughter, stories, and bonding that you won't want to miss!",
-      timeAndVenue: "8:30 to 9:30 pm @Mother Teresa Road",
+      timeAndVenue: "8:30 PM to 9:30 PM  @Dental Parking",
       venuBgColor:"#593318"
     }
   ];

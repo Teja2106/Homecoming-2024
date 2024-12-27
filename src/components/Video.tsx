@@ -3,7 +3,7 @@ import headerVideo from '../assets/mainVdo HD.mp4';
 export default function Video() {
   return (
     <div>
-      <div className="mt-10 min-h-auto">
+      <div className="mt-14 min-h-auto">
         <div className="container m-auto">
           <div className="w-full relative py-10">
             <div className="w-full h-full lg:mx-4 relative rounded-xl">
