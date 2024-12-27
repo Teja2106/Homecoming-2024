@@ -25,16 +25,16 @@ const Events = () => {
       displayUrl: registerSpeaker,
       backgroundUrl: registrationDesk,
       title: "Registrations",
-      description: "Kick off your homecoming with a smooth, welcoming registration. Check in, collect your essentials, and get a rundown of the day’s exciting activities—your first step to reconnecting and reliving your time at GITAM!",
-      timeAndVenue: "2:00 to 3:00 pm @KRC Lawn",
+      description: "Registration will begin at Bhima’s from 2:30pm, where we’ll ensure you’re all set for the day. You’ll receive a detailed event plan, a handy water bottle, a felt bag, your exclusive boarding pass, and an ID card to keep you organized and ready to explore. It’s the perfect start to an unforgettable experience.",
+      timeAndVenue: "Starts 2:30pm @Bhima's",
       venuBgColor:"#436D67"
     },
     
     {
       displayUrl: classroom,
       backgroundUrl: alumni,
-      title: "Departmental Visits",
-      description: "Revisit the classrooms and labs that shaped your journey. Reconnect with professors, explore new innovations, and see how your department has evolved.",
+      title: "CAMPUS TOUR",
+      description: "Join us for an engaging campus tour that showcases the heart of GITAM University! ",
       timeAndVenue: "3:00 to 5:00 pm @Your Department",
       venuBgColor:"#65594B"
     },
@@ -42,7 +42,7 @@ const Events = () => {
       displayUrl: friendsInCarnival,
       backgroundUrl: carnival,
       title: "Carnival",
-      description: "Where nostalgia meets fun! Reconnect with old friends at our vibrant carnival with games, creative workshops, thrilling rides, and live performances. Relive cherished memories while enjoying delicious treats. ",
+      description: "Dive into pure fun with our vibrant carnival, featuring almost 10 exciting stalls just for you! Bounce around in the inflatable castle, showcase your skills at inflatable bowling alley, or get creative with pottery and tote bag painting. Don’t miss the classic treats—popcorn and cotton candy to keep the festive spirit alive!",
       timeAndVenue: "5:00 to 6:30 pm @Coke Station Road",
       venuBgColor:"#962E3D"
     },
@@ -50,7 +50,7 @@ const Events = () => {
       displayUrl: racingCar,
       backgroundUrl: vrHeadSet,
       title: "Innovation Expo",
-      description: "Innovation Expo is where GITAM students, professors, and clubs showcase their innovative projects to esteemed alumni, creating oppurtunities to share ideas, collaborate, and build meaningful connections.",
+      description: "Prepare to be wowed by a spectacular display of F1 cars, VR, Autonomous Obstacle Avoidance Drones that display highlight the incredible creativity and technological strides of GITAM clubs and students. For alumni, it’s a chance to relive the thrill of building your own ambitious projects and the pride of seeing ideas come to life. The future of technology is here, and it’s a nod to the foundation you helped create.",
       timeAndVenue: "5:00 to 6:30 pm @Mother Teresa Road",
       venuBgColor:"#6A5133"
     },
@@ -58,7 +58,7 @@ const Events = () => {
       displayUrl: football,
       backgroundUrl: cricketMatch,
       title: "Sports",
-      description: "Hit the field, relive the adrenaline, and reignite your competitive spirit! Join friendly matches, cheer for your teams, and celebrate the camaraderie and sportsmanship that made campus life unforgettable.",
+      description: "Get competitive with games like tug of war, badminton, table tennis, basketball, and a unique twist—a blindfolded cricket! There’s something for everyone to enjoy and participate in .Whether you're a seasoned athlete or just looking for some light-hearted fun, these activities offer the perfect opportunity to bond, compete, and create lasting memories.",
       timeAndVenue: "5:00 to 6:30 pm @Cricket Stadium",
       venuBgColor:"#6E524B"
     },
@@ -66,7 +66,7 @@ const Events = () => {
       displayUrl: bharatImage,
       backgroundUrl: bharatBackground,
       title: "Inaugural",
-      description: "The Homecoming inaugural ceremony marks the beginning of the celebrations with a classical performance, traditional lamp lighting, and heartfelt speeches by distinguished guests.",
+      description: "Thrilled to have some of GITAM’s most accomplished alumni joining us to celebrate this grand occasion. From the Class of 1991, Shri. Naresh Kumar Oruganti will grace the event. Representing the Class of 1994, we welcome Smt. Sireesha Gouthu. Adding to the star lineup is Shri. Girish Gadamsetty from the Class of 1997. Finally, the creative genius Shri. Ameet Mirpuri, Class of 1999 will also be part of the celebrations. Their stories promise to inspire, amaze, and make this event truly memorable.",
       timeAndVenue: "6:30 to 7:30 pm @Open Auditorium",
       venuBgColor:"#223E83"
     },
@@ -74,7 +74,7 @@ const Events = () => {
       displayUrl: singer,
       backgroundUrl: musicBand,
       title: "Culturals",
-      description: "Celebrate the vibrant spirit of GITAM! Enjoy an evening of music, dance, drama, and art that brings back memories, showcase talent, and reconnects you with the energy of campus life.",
+      description: "Groove to electrifying group dances by the Starbursts who have come specially from Bangalore and have already delivered sensational performances at the HomeComing’24 at the Bangalore campus",
       timeAndVenue: "7:30 to 8:00 pm @Open Auditorium",
       venuBgColor:"#022970"
     },
@@ -89,7 +89,7 @@ const Events = () => {
       displayUrl: beerParty,
       backgroundUrl: groupPic,
       title: "Dinner + Live Music",
-      description: "Connect, collborate, and catch up over an evening of good food and great conversations. Meet fellow alumni, faculty, and students, and build valuable connections that last beyond the event.",
+      description: "Enjoy a delightful dinner accompanied by live music, creating the perfect atmosphere to engage with friends, seniors, and new acquaintances. It’s a night of laughter, stories, and bonding that you won't want to miss!",
       timeAndVenue: "8:30 to 9:30 pm @Mother Teresa Road",
       venuBgColor:"#593318"
     }
