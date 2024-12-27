@@ -34,7 +34,7 @@ const Events = () => {
       displayUrl: classroom,
       backgroundUrl: alumni,
       title: "CAMPUS TOUR",
-      description: "Begin your journey at the iconic cricket stadium, a jewel among university facilities, and explore the state-of-the-art gym. Capture memories at the open auditorium’s Homecoming and New Year photo booths. Visit G-Studio at GSHS for vibrant photo exhibitions, live performances, and the cozy Venture Cafe. Discover innovation at the Venture Development Centre, where groundbreaking alumni ideas took shape. Admire future-forward designs at the architecture building and cutting-edge technology at Murthy Lab 2 in the pharmacy building, featuring NMR spectroscopy and other high-tech equipment. Conclude at Talent Cafe with high tea, refreshments, and live music. Celebrate the spirit of GITAM with us!",
+      description: "Explore GITAM’s iconic cricket stadium, state-of-the-art gym, and vibrant G-Studio with photo exhibitions and live performances. Visit the Venture Development Centre for groundbreaking ideas, admire architectural innovations, and cutting-edge technology at Murthy Lab 2. Conclude at Talent Cafe with refreshments, music, and the spirit of GITAM!",
       timeAndVenue: "3:00 PM to 5:00 PM (Multiple Venues)",
       venuBgColor:"#65594B"
     },
@@ -66,7 +66,7 @@ const Events = () => {
       displayUrl: bharatImage,
       backgroundUrl: bharatBackground,
       title: "Inaugural",
-      description: "At 6:30 pm is the inaugural where we are thrilled to have some of GITAM’s most accomplished alumni joining us to celebrate this grand occasion. From the Class of 1991, Shri. Naresh Kumar Oruganti, the visionary CEO of Symbiosys Technologies, will grace the event. Representing the Class of 1994, we welcome Smt. Sireesha Gouthu, dynamic MLA of Palasa. Adding to the star lineup is Shri. Girish Gadamsetty from the Class of 1997, leading global operations as Director of Business Operations at Adobe. Finally, the creative genius Shri. Ameet Mirpuri, Class of 1999, a renowned design consultant for high-profile inaugurals, will also be part of the celebrations. Their stories promise to inspire, amaze, and make this event truly memorable.",
+      description: "Join us at 6:30 PM for the inaugural, featuring accomplished GITAM alumni: Shri. Naresh Kumar Oruganti, CEO of Symbiosys Technologies (1991), Smt. Sireesha Gouthu, MLA of Palasa (1994), Shri. Girish Gadamsetty, Adobe Director (1997), and Shri. Ameet Mirpuri, design consultant (1999). Their inspiring stories await you!",
       timeAndVenue: "6:30 PM to 7:30 PM @Dental Parking",
       venuBgColor:"#223E83"
     },
