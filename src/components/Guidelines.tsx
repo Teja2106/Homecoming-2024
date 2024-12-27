@@ -1,9 +1,10 @@
 export default function Guidelines() {
   return (
-    <div id="guidelines" className="bg-emerald-600 rounded-2xl">
+    <div id="guidelines" className="rounded-2xl">
       <div className="p-8">
-        <h2 className='text-6xl font-bold text-cyan-200'>Guidelines</h2>
-        <ul className="text-lg font-semibold text-left gap-12 py-10 text-gray-100 list-disc pl-5">
+      <h2 className='text-6xl font-bold' style={{ color: '#4D9BD3' }}>Guidelines</h2>
+
+        <ul className="text-lg text-left gap-12 py-10 list-disc pl-5 leading-[40px]">
   <li>Alumni must register on the alumni portal for Homecoming 2024 Vizag. On-spot registrations are available at the Vizag Campus.</li>
   <li>During prior registration, alumni must specify the requirement details viz, transportation, accompanies, food preferences, parking, accommodation, etc.</li>
   <li>Alumni should carry the alumni card (if possessed). Alumni must display the registration confirmation email at the registration desks at the entrance of the campus.</li>

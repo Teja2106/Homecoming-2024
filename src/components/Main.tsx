@@ -2,7 +2,7 @@ import Navbar from './Navbar';
 import Header from './Header'
 import Events from "./Events"
 import Gallery from './Gallery'
-import Team from "./Team";
+
 import Gallerymain from './Gallerymain';
 import Video from './Video';
 import Merch from './Merch';
@@ -20,7 +20,7 @@ export default function Main() {
       <Gallery />
       < Merch />
       <Guidelines />
-      <Team />
+      
       <Footer/>
     </div>
   )

@@ -43,7 +43,7 @@ function ImageItem({ src, text }: ImageType) {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <div className="masonry-item">
+    <div className="masonry-item font-annie">
       <div
         className="image-container"
         style={{
