@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
-// Add CSS here if needed
 
 const calculateTimeLeft = () => {
   const targetDate = new Date('2024-12-28T00:00:00');
   const currentDate = new Date();
   const difference = targetDate.getTime() - currentDate.getTime();
+
+  if (difference <= 0) {
+    return { days: 0, hours: 0, minutes: 0, seconds: 0 }; // Return zero for all units
+  }
 
   const days = Math.floor(difference / (1000 * 60 * 60 * 24));
   const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -51,23 +54,39 @@ const Hero: React.FC = () => {
                 </p>
               </div>
             ) : (
-              <div className="flex space-x-2 md:space-x-4 justify-start items-center">
-                <div className="text-center">
-                  <p className="text-3xl md:text-5xl ">{timeLeft.days}<span className="text-[#007069]">:</span></p>
-                  <p className="text-sm md:text-lg text-[#007069]">Days</p>
+              <div className="flex flex-col space-y-4">
+                <div className="flex space-x-2 md:space-x-4">
+                  <div className="text-center">
+                    <p className="text-3xl md:text-5xl ">{timeLeft.days}<span className="text-[#007069]">:</span></p>
+                    <p className="text-sm md:text-lg text-[#007069]">Days</p>
+                  </div>
+                  <div className="text-center">
+                    <p className="text-3xl md:text-5xl ">
+                      {timeLeft.hours.toString().padStart(2, '0')}
+                      <span className="text-[#007069]">:</span>
+                    </p>
+                    <p className="text-sm md:text-lg text-[#007069]">Hours</p>
+                  </div>
+                  <div className="text-center">
+                    <p className="text-3xl md:text-5xl ">
+                      {timeLeft.minutes.toString().padStart(2, '0')}
+                      <span className="text-[#007069]">:</span>
+                    </p>
+                    <p className="text-sm md:text-lg text-[#007069]">Min</p>
+                  </div>
+                  <div className="text-center">
+                    <p className="text-3xl md:text-5xl ">
+                      {timeLeft.seconds.toString().padStart(2, '0')}
+                    </p>
+                    <p className="text-sm md:text-lg text-[#007069]">Sec</p>
+                  </div>
                 </div>
-                <div className="text-center">
-                  <p className="text-3xl md:text-5xl ">{timeLeft.hours}<span className="text-[#007069]">:</span></p>
-                  <p className="text-sm md:text-lg text-[#007069]">Hours</p>
-                </div>
-                <div className="text-center">
-                  <p className="text-3xl md:text-5xl ">{timeLeft.minutes}<span className="text-[#007069]">:</span></p>
-                  <p className="text-sm md:text-lg text-[#007069]">Min</p>
-                </div>
-                <div className="text-center">
-                  <p className="text-3xl md:text-5xl ">{timeLeft.seconds}</p>
-                  <p className="text-sm md:text-lg text-[#007069]">Sec</p>
-                </div>
+                {timeLeft.days === 0 &&
+                  timeLeft.hours === 0 &&
+                  timeLeft.minutes === 0 &&
+                  timeLeft.seconds === 0 ? (
+                  <p className="text-xl md:text-2xl font-bold text-[#007069] mt-4 flex justify-start">And, It's A Wrap!</p>
+                ) : null}
               </div>
             )}
           </div>
